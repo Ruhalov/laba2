@@ -28,7 +28,7 @@ public class CallCentre {
         System.out.println("callcentre started");
         ArrayList <Operator> operators = new ArrayList<>(MAX_OPERATORS); // Список операторов
 
-        final int WORKING_TIME = 7;  //сколько секунд будет работать колл-центр
+        final int WORKING_TIME = 15;  //сколько секунд будет работать колл-центр
         final long START_WORKING_TIME = new Date().getTime();  //время начала работы
 
         Random rand = new Random();
