@@ -1,6 +1,8 @@
 import java.util.Random;
 
 public class Operator extends Thread {
+    private final Client client;
+
     public void run() {
         Random rand = new Random();
         System.out.println(this.getName() + " говорит c " + client.getName());
@@ -13,9 +15,7 @@ public class Operator extends Thread {
         System.out.println(currentThread().getName() + " пока " + client.getName());
     }
 
-    private final Client client;
-    Operator (Client client)
-    {
+    Operator (Client client) {
         this.client = client;
         start();
     }
